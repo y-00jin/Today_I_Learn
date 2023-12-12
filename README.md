@@ -9,7 +9,6 @@
 <br><br>
 # ThreeJS
 
-- [ThreeJS 시작하기](https://d0u0b.tistory.com/6)
-
-
+- [ThreeJS 시작하기(1)](https://d0u0b.tistory.com/6)
+- [ThreeJS 시작하기(2) : renderer, camera 설정](https://d0u0b.tistory.com/7)
 
