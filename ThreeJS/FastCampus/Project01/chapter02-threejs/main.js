@@ -1,6 +1,12 @@
 import "./style.css";
 import * as THREE from "three";
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls"
 
+// 생성한 scene을 renderer로 송출
+const renderer = new THREE.WebGLRenderer({antialias: true});       // antialias : 박스 표면 부드럽게
+renderer. shadowMap.enabled = true;                           // Mesh에 그림자 생성 가능하도록 함
+renderer.setSize(window.innerWidth, window.innerHeight);     // renderer 사이즈 설정
+document.body.appendChild(renderer.domElement)   // 완성된 결과물을 html에 추가
 
 // 장면 생성
 const scene = new THREE.Scene();
@@ -15,18 +21,44 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.y = 1;		// 카메라 y 값 설정
 camera.position.z = 5;		// 카메라 z 값 설정
 
+// 빛 생성
+const directionalLight = new THREE.DirectionalLight(0xffffff, 5);   // 색, 빛의 세기
+directionalLight.castShadow = true;     // 그림자 생성
+directionalLight.position.set(3,4,5);   // 빛의 위치 설정
+directionalLight.lookAt(0, 0, 0);       // 빛이 어디를 바라볼 것인지 설정
+scene.add(directionalLight);
+
+// 바닥 Mesh 오브젝트 생성
+const floorGeometry = new THREE.PlaneGeometry(20,20);                   // 가로, 세로
+const floorMaterial = new THREE.MeshStandardMaterial({color:0xbbbbbb}); // 바닥 Mesh 오브젝트 스타일
+const floor = new THREE.Mesh(floorGeometry, floorMaterial);             // 바닥 Mesh 오브젝트 생성
+floor.rotation.x = -Math.PI / 2;       // 바닥 Mesh 회전
+floor.receiveShadow = true;            // 그림자 받음
+floor.castShadow = true;               // 그림자 생성
+scene.add(floor);    // 바닥 오브젝트를 scene에 추가
+
+
 // Mesh 오브젝트 생성
 const geometry = new THREE.BoxGeometry(1,1,1);                  // 박스 오브젝트 생성
-const material = new THREE.MeshBasicMaterial({color:0xff0000})  // 오브젝트 스타일
+const material = new THREE.MeshStandardMaterial({color:0xff0000})  // StandardMaterial : 빛 필수(빛이 존재하지 않으면 보이지 않음)
+// const material = new THREE.MeshBasicMaterial({color:0xff0000})  // 기본 오브젝트 스타일
 const mesh = new THREE.Mesh(geometry, material);                // Mesh 오브젝트 생성
+mesh.castShadow = true;     // 그림자 생성
+mesh.position.y = 0.5;
+scene.add(mesh);    // 생성한 오브젝트를 scene에 추가
 
-// 생성한 오브젝트를 scene에 추가
-scene.add(mesh);
+// 캡슐 오브젝트 생성
+const capsuleGeometry = new THREE.CapsuleGeometry(1, 2, 20, 30);
+const capsuleMaterial = new THREE.MeshStandardMaterial({color:0xffff00});
+const capsuleMesh = new THREE.Mesh(capsuleGeometry, capsuleMaterial );
+capsuleMesh.position.set(3, 1.75, 0);   // 위치 변경
+capsuleMesh.receiveShadow = true;       // 그림자 받음
+capsuleMesh.castShadow = true;          // 그림자 생성
+scene.add(capsuleMesh);
 
-// 생성한 scene을 renderer로 송출
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);     // renderer 사이즈 설정
-document.body.appendChild(renderer.domElement)   // 완성된 결과물을 html에 추가
+// 마우스 드래그으로 카메라 시점 변경
+const orbitControls = new OrbitControls(camera, renderer.domElement);
+orbitControls.update();
 
 // 크기가 변경될 경우의 이벤트 리스너 추가
 window.addEventListener('resize', () => {
@@ -36,7 +68,12 @@ window.addEventListener('resize', () => {
     renderer.render(scene, camera);                             // renderer 재설정
 })
 
-renderer.render(scene, camera);
+const render = () =>{
+    renderer.render(scene, camera);
+    requestAnimationFrame(render);
+}
+
+render();
 
 
 
