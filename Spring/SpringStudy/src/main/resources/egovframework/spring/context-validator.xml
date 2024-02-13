@@ -9,8 +9,8 @@
     <bean id="validatorFactory" class="org.springmodules.validation.commons.DefaultValidatorFactory">
         <property name="validationConfigLocations">
             <list>
-                <value>/WEB-INF/config/egovframework/validator/validator-rules.xml</value>
-                <value>/WEB-INF/config/egovframework/validator/validator.xml</value>
+                <value>/WEB-INF/config/egovframework/validator/validator-rules.xml</value>	<!-- 사용되는 모든 검증 규칙을 정의한 파일 -->
+                <value>/WEB-INF/config/egovframework/validator/validator.xml</value>		<!-- 입력폼에서 검증 규칙이 어떻게 적용되는지에 대한 정보를 가지고 있는 파일 -->
             </list>
         </property>
     </bean>

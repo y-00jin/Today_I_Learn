@@ -4,32 +4,43 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
+	<!-- 포털사이트의 기능 작동 과정에서 Exception 발생 시 후처리를 위한 AOP설정 -->
 	<aop:config>
+		<!-- 서비스 메서드를 포인트컷으로 설정(execution뒤에 서비스 경로) -->
 		<aop:pointcut id="serviceMethod" expression="execution(* egovframework.example..impl.*Impl.*(..))" />
 
+		<!-- 예외 전달을 담당하는 어드바이스 설정 -->
 		<aop:aspect ref="exceptionTransfer">
 			<aop:after-throwing throwing="exception" pointcut-ref="serviceMethod" method="transfer" />
 		</aop:aspect>
 	</aop:config>
 	
+	<!-- Exception 발생시 후처리를 위해 표준프레임워크 실행환경의 ExceptionTransfer를 활용하도록 설정-->
 	<bean id="exceptionTransfer" class="egovframework.rte.fdl.cmmn.aspect.ExceptionTransfer">
+		<!-- 예외 처리 서비스 설정 -->
 		<property name="exceptionHandlerService">
 			<list>
+				<!-- 기본 예외 처리 매니저 -->
 				<ref bean="defaultExceptionHandleManager" />
+				<!-- 기타 예외 처리 매니저 -->
 				<ref bean="otherExceptionHandleManager" />
 			</list>
 		</property>
 	</bean>
 
+	<!-- Exception 발생에 대한 기본Excpton처리를 위해 표준프레임워크 실행환경의 DefaultExceptionTransfer를 활용하도록 설정-->
 	<bean id="defaultExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
+		<!-- 요청 패턴 매처 설정 -->
 		<property name="reqExpMatcher">
 			<ref bean="antPathMater"/>
 		</property>
+		<!-- 예외 처리할 패키지 패턴 설정 -->
 		<property name="patterns">
 			<list>
 				<value>**service.impl.*</value>
 			</list>
 		</property>
+		<!-- 예외 처리 핸들러 설정 -->
 		<property name="handlers">
 			<list>
 				<ref bean="egovHandler" />
@@ -37,15 +48,19 @@
 		</property>
 	</bean>
 
+	<!-- Exception 발생에 대한 기타Excpton처리를 위해 표준프레임워크 실행환경의 DefaultExceptionTransfer를 활용하도록 설정-->
 	<bean id="otherExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
+		<!-- 요청 패턴 매처 설정 -->
 		<property name="reqExpMatcher">
 			<ref bean="antPathMater"/>
 		</property>
+		<!-- 예외 처리할 패키지 패턴 설정 -->
 		<property name="patterns">
 			<list>
 				<value>**service.impl.*</value>
 			</list>
 		</property>
+		<!-- 예외 처리 핸들러 설정 -->
 		<property name="handlers">
 			<list>
 				<ref bean="otherHandler" />
@@ -53,6 +68,7 @@
 		</property>
 	</bean>
 
+	<!-- 템플릿 내에서 Exception 발생시 실제 처리를 위한 클래스 설정-->
 	<bean id="egovHandler" class="egovframework.example.cmmn.EgovSampleExcepHndlr" />
 	<bean id="otherHandler" class="egovframework.example.cmmn.EgovSampleOthersExcepHndlr" />	
 	

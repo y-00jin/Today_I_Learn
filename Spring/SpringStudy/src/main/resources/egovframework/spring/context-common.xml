@@ -4,11 +4,15 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+	<!-- 컴포넌트 스캔 설정 : 컴포넌트 스캔을 통해 지정된 패키지에서 컴포넌트들을 검색하고 빈으로 등록 -->
     <context:component-scan base-package="egovframework">
+    	<!-- Controller 어노테이션이 달린 클래스는 스캔 대상에서 제외 -->
        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
 
+	<!-- 메시지 리소스 설정 : 다국어 지원 및 메시지 리소스를 관리하기 위한 설정 -->
 	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<!-- 메시지 소스 등록 -->
 		<property name="basenames">
 			<list>
 				<value>classpath:/egovframework/message/message-common</value>
@@ -16,11 +20,13 @@
 				<value>classpath:/egovframework/rte/fdl/property/messages/properties</value>
 			</list>
 		</property>
+		<!-- 캐시 기간 설정 -->
 		<property name="cacheSeconds">
 			<value>60</value>
 		</property>
 	</bean>
 	
+	<!-- LeaveaTrace 빈 설정 -->
 	<bean id="leaveaTrace" class="egovframework.rte.fdl.cmmn.trace.LeaveaTrace">
 		<property name="traceHandlerServices">
 			<list>
@@ -29,6 +35,7 @@
 		</property>
 	</bean>
 
+	<!-- TraceHandlerService 빈 설정 -->
 	<bean id="traceHandlerService" class="egovframework.rte.fdl.cmmn.trace.manager.DefaultTraceHandleManager">
 		<property name="reqExpMatcher">
 			<ref bean="antPathMater" />
@@ -45,7 +52,9 @@
 		</property>
 	</bean>
 	
+	<!-- AntPathMatcher 빈 설정 -->
 	<bean id="antPathMater" class="org.springframework.util.AntPathMatcher" />
+	<!-- DefaultTraceHandler 빈 설정 (egovframework.rte.fdl.cmmn.trace.handler.DefaultTraceHandler) -->
 	<bean id="defaultTraceHandler" class="egovframework.rte.fdl.cmmn.trace.handler.DefaultTraceHandler" />
 	 
 </beans>
