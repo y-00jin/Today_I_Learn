@@ -26,8 +26,7 @@ header{
 header a{
   margin:0 10px;
   text-decoration: none;  /* a태그의 기본 스타일(밑줄) */
-  color:grey;
-
+  color:gray;
 }
 header a:focus,
 header a:hover{
@@ -47,10 +46,106 @@ footer{
   gap: 20px;  /* 요소 간 간격*/
 }
 
+footer a{
+  margin:0 10px;
+  text-decoration: none;  /* a태그의 기본 스타일(밑줄) */
+  color:gray;
+}
+footer a:focus,
+footer a:hover{
+  color:black
+}
+
+/* post navigation*/
+.post__navigation{
+  display: flex;
+  gap:12px;
+  margin: 0 auto;
+  max-width: 680px;
+  font-size: 16px;
+  color:gray;
+  cursor: pointer;  /* 마우스 커서가 올라가면 모양 변함 */
+  padding: 48px 20px 0px 20px;
+}
+
+.post__navigation--active{
+  color:black;
+  font-weight: 600;
+}
+
 /* post list */
 .post__list{
   min-height: 90vh; /* 뷰포트 기준으로 90% */
-  padding:20px 40px;
+  padding:20px;
   text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 24px;
 }
 
+/* 게시글 박스*/
+.post__box{
+  padding: 24px 0;
+  border-top:1px solid #f2f2f2;
+}
+
+/* 프로필 박스*/
+.post__profile-box{
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  align-items: center;
+}
+
+/* 프로필 모양*/
+.post__profile{
+  width:36px;
+  height: 36px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+/* 날짜 및 이름 */
+.post__date,
+.post__author-name {
+  color:gray;
+}
+
+/* 제목 */
+.post__title{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 14px 0px;
+}
+
+/* 내용 */
+.post__text{
+  color:dimgray;
+  font-size: 16px;
+}
+
+/* 게시글의 a태그 데코레이션 제거*/
+.post__list a{
+  text-decoration: none; 
+  color:black;
+}
+
+/* 수정 삭제 박스 */
+.post__utils-box {
+  display: flex;
+  gap: 8px;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  color: gray;
+}
+
+
+.post__delete:hover,
+.post__delete:focus{
+  color:black;
+}
+.post__edit:hover,
+.post__edit:focus{
+  color:black;
+}
