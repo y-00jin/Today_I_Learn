@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src", // 절대경로 기본 디렉터리 지정
     "target": "es5",
     "lib": [
       "dom",
@@ -20,7 +21,9 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": [ "src"],
+  "paths":{   // 모듈 이름, 해당 모듈 파일의 경로를 매핑하는 설정
+    "pages/*" : ["pages/*"],
+    "components/*" : ["components/*"]
+  }  
 }
