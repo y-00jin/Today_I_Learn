@@ -5,51 +5,35 @@
 
 /* navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 52px;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  background: white;
+  @apply flex justify-between items-center fixed w-full h-[52px] top-0 shadow-sm bg-white;
 }
 
 /* logo */
 .navbar__logo {
-  color: darkblue;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0px 18px;
+  @apply text-blue-800 text-lg font-semibold cursor-pointer px-[18px] py-0;
 }
 
 /* list */
 .navbar__list {
-  padding: 0px 18px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
+  @apply flex gap-3 items-center px-[18px] py-0;
 }
 
 /** 모바일의 경우를 고려하여 버튼의 기존 스타일은 보이지 않게 수정 */
 .navbar__button {
-  display: none;
-  cursor: pointer;
+  @apply hidden cursor-pointer;
 }
 
 /* list 요소 */
 .navbar__list--item {
-  cursor: pointer;
+  @apply cursor-pointer;
 }
 .navbar__list--item:hover {
-  color: darkgray;
+  @apply text-gray-600;
 }
 
 /* navbar 위치 고려 */
 .layout {
-  padding-top: 52px;
+  @apply pt-[52px];
 }
 
 /* 모바일 스타일 */
@@ -57,41 +41,30 @@
 
   /* 모바일 navbar */
   .navbar--mobile {
-    position: fixed;
-    width: 100%;
-    top: 52px;
-    background: darkblue;
-    color: white;
-    height: 100vh;
+    @apply fixed w-full text-white h-screen top-[52px] bg-blue-800;
   }
 
   /* 기존의 리스트 숨기기*/
   .navbar__list {
-    display: none;
+    @apply hidden;
   }
 
   /* 모바일 리스트 버튼 */
   .navbar__button {
-    display: block;
-    cursor: pointer;
-    padding: 0px 18px;
+    @apply block px-[18px] py-0;
   }
 
   /* 모바일 list 요소 스타일*/
   .navbar__list--item--mobile {
-    cursor: pointer;
+    @apply cursor-pointer;
   }
   .navbar__list--item--mobile:hover {
-    color: darkgray;
+    @apply text-gray-600;
   }
 
   /* 모바일 리스트 */
   .navbar__list--mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: start;
-    padding: 24px 18px;
+    @apply flex flex-col gap-4 px-[18px] py-6;
   }
 
 }
