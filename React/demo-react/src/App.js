@@ -1,32 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect, useState } from 'react';
-
+import Router from 'pages/components/Router';
 function App() {
 
-  const [test, setTest] = useState('test');
+  // const [test, setTest] = useState('test');
 
-  useEffect(() =>{
+  // useEffect(() =>{
 
-    fetch("http://localhost:8088/api")
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        setTest(data.message);
-      });
-  });
-
-
-  return (
+  //   fetch("http://localhost:8088/api")
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       console.log(data);
+  //       setTest(data.message);
+  //     });
+  // });
 
 
-    <>
-    
-    <div>
-      {test}
-    </div>
-    </>
-  );
+  return <Router/>;
 }
 
 export default App;
