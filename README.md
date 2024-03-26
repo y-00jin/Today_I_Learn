@@ -27,7 +27,7 @@
 
 <br><br>
 # Others
-- [Git : 터미널로 깃 관리](https://d0u0b.tistory.com/18)
+- [Git : 터미널로 깃 관리](https://d0u0b.tistory.com/18)
 - [Redis : Window에 Redis설치](https://d0u0b.tistory.com/14)
 - [GeoServer : GeoServer 스타일 - 속성값에 따라 다른 심볼 이미지 설정](https://d0u0b.tistory.com/11)
 - [REST API](https://d0u0b.tistory.com/9)
