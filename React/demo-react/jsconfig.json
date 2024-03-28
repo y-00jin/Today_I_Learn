@@ -5,8 +5,7 @@
     "include": ["src"],
     "paths": {
       "pages/*": ["pages/*"],
-      "components/*": ["components/*"],
-      "db/*": ["./db/*"]
+      "components/*": ["components/*"]
     }
   }
   
