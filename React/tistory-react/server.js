@@ -1,4 +1,5 @@
 const express = require('express');
+const queries = require('./src/db/queries'); // queries.js 파일 전체를 가져옴
 const path = require('path');
 const app = express();
 
@@ -13,9 +14,13 @@ const corsOption = {
 app.use(cors(corsOption));
 app.use(express.json());
 
-// tests 경로로 접속하면 아래 작업 후 데이터 전송해줌
 app.get('/api/tests', async (req, res) => {
-    res.send({message:'Hi'});
+    try {
+        const tests = await queries.getTests(); // queries 객체를 통해 getTests 함수를 호출하여 테스트 목록을 가져옴
+        res.status(200).json(tests); // 목록을 JSON 형식으로 응답
+    } catch (error) {
+        res.status(500).json({ error: 'Internal server error' }); // 오류 발생 시 500 에러 응답
+    }
 });
 
 // 정적 파일 미들웨어 설정
