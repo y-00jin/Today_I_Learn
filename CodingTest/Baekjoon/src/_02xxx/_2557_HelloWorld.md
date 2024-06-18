@@ -1,15 +1,8 @@
 ## 문제
-
----
-
-<aside>
-💡 Hello World!를 출력하시오
-
-</aside>
+Hello World!를 출력하시오
+<br><br>
 
 ## 정답
-
----
 
 ```java
 public class Main{
@@ -19,4 +12,4 @@ public class Main{
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a65bb49-82ac-4d30-9ac8-66f5a5cfda94/767422c0-fb47-4c7d-a9cd-afbb1b89ab30/Untitled.png)
+![image](https://github.com/y-00jin/Today_I_Learn/assets/81798918/d1528a18-4786-4636-893c-b66e00365682)
