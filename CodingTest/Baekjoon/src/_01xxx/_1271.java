@@ -10,8 +10,8 @@ public class _1271 {
 		StringTokenizer st = new StringTokenizer(inputValues);
 		int n = Integer.parseInt(st.nextToken());	// 돈
 		int m = Integer.parseInt(st.nextToken());	// 돈을 받으러 온 생명체 수
-		System.out.println(n/m);	// 생명체 하나에게 돌아가는 돈의 양
-		System.out.println(n%m);	// 1원씩 분배할 수 없는 남는 돈
+		System.out.println(m == 0 ? "0": n/m);	// 생명체 하나에게 돌아가는 돈의 양
+		System.out.println(m == 0 ? n: n%m);	// 1원씩 분배할 수 없는 남는 돈
 		br.close();
 	}
 }

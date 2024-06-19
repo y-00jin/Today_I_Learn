@@ -51,3 +51,7 @@ build/
 # 기타
 .DS_Store
 Thumbs.db
+
+# bin 폴더 내 모든 .md 파일 무시
+bin/**/*.md
+bin/*.md
