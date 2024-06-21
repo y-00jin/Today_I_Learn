@@ -2,7 +2,7 @@
 📒 하루 동안 배운 지식, 기술등을 기록하는 공간
 <br><br><br>
 
-# <img src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" width="30" height="30" style="vertical-align: middle;"/>  BAEKJOON
+# <img src="https://d2gd6pc034wcta.cloudfront.net/tier/3.svg" width="30" height="30" style="vertical-align: middle;"/>  BAEKJOON
 - <a href='https://github.com/y-00jin/Today_I_Learn/tree/main/CodingTest/Baekjoon/src' target="_blank">문제 풀이 및 정리</a>
 
 
