@@ -2,6 +2,11 @@
 📒 하루 동안 배운 지식, 기술등을 기록하는 공간
 <br><br><br>
 
+# <img src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" width="30" height="30" style="vertical-align: middle;"/>  BAEKJOON
+- <a href='https://github.com/y-00jin/Today_I_Learn/tree/main/CodingTest/Baekjoon/src' target="_blank">문제 풀이 및 정리</a>
+
+
+
 # Node.js
 - [쿼리 실행 시 로그 출력](https://d0u0b.tistory.com/entry/Nodejs-%EC%BF%BC%EB%A6%AC-%EC%8B%A4%ED%96%89-%EC%8B%9C-%EB%A1%9C%EA%B7%B8-%EC%B6%9C%EB%A0%A5)
 - [쿼리문 실행 시 트랜잭션 걸기 #BEGIN #COMMIT #ROLLBACK](https://d0u0b.tistory.com/entry/Nodejs-%EC%BF%BC%EB%A6%AC%EB%AC%B8-%EC%8B%A4%ED%96%89-%EC%8B%9C-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B1%B8%EA%B8%B0-BEGIN-COMMIT-ROLLBACK)
