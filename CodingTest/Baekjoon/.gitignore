@@ -27,6 +27,7 @@
 *.iml
 *.iws
 out/
+classes
 
 # NetBeans
 nbproject/private/
