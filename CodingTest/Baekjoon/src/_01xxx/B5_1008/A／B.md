@@ -1,6 +1,7 @@
 # <img src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" width="30" height="30" style="vertical-align: middle;"/> [1008] A/B
 
 <h3>Question</h3>
+
 ```bash
 두 정수 A와 B를 입력받은 다음, A/B를 출력하는 프로그램을 작성하시오.
 ```
