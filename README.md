@@ -3,9 +3,10 @@
 <br><br><br>
 
 # <img src="https://d2gd6pc034wcta.cloudfront.net/tier/3.svg" width="30" height="30" style="vertical-align: middle;"/>  BAEKJOON
-- <a href='https://github.com/y-00jin/Today_I_Learn/tree/main/CodingTest/Baekjoon/src' target="_blank">문제 풀이 및 정리</a>
+- [백준 문제 풀이 및 정리(Git)](https://github.com/y-00jin/Today_I_Learn/tree/main/CodingTest/Baekjoon/src)
+- [백준 문제 풀이 및 정리(Tistory)](https://d0u0b.tistory.com/category/%EB%B0%B1%EC%A4%80)
 
-
+<br><br>
 
 # Node.js
 - [쿼리 실행 시 로그 출력](https://d0u0b.tistory.com/entry/Nodejs-%EC%BF%BC%EB%A6%AC-%EC%8B%A4%ED%96%89-%EC%8B%9C-%EB%A1%9C%EA%B7%B8-%EC%B6%9C%EB%A0%A5)
@@ -13,6 +14,7 @@
 - [node.js 세션 풀림 오류 #credentials #withCredentials](https://d0u0b.tistory.com/entry/Nodejs-React-nodejs-%EC%84%B8%EC%85%98-%ED%92%80%EB%A6%BC-%EC%98%A4%EB%A5%98)
 - [Windows - OpenSSL 설치부터 Node에 HTTPS 적용](https://d0u0b.tistory.com/entry/Nodejs-Windows-OpenSSL-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0-Node%EC%97%90-HTTPS-%EC%A0%81%EC%9A%A9)
 
+<br><br>
 
 # React
 
@@ -23,13 +25,14 @@
 - [React생성부터 Node.js 연동까지 - 4) Node.js 연동](https://d0u0b.tistory.com/entry/React-React%EC%83%9D%EC%84%B1%EB%B6%80%ED%84%B0-Nodejs-%EC%97%B0%EB%8F%99%EA%B9%8C%EC%A7%80-4-Nodejs-%EC%97%B0%EB%8F%99)
 - [React생성부터 Node.js 연동까지 - 5) DB 연동](https://d0u0b.tistory.com/entry/React-React%EC%83%9D%EC%84%B1%EB%B6%80%ED%84%B0-Nodejs-%EC%97%B0%EB%8F%99%EA%B9%8C%EC%A7%80-5-DB-%EC%97%B0%EB%8F%99)
 - [DIV 반복 생성](https://d0u0b.tistory.com/entry/React-DIV-%EB%B0%98%EB%B3%B5-%EC%83%9D%EC%84%B1)
-
 - [confirm 메시지 출력 #confirm](https://d0u0b.tistory.com/entry/React-confirm-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%B6%9C%EB%A0%A5-confirm)
 - [두번씩 렌더링 되는 이유와 해결방법 #StrictMode](https://d0u0b.tistory.com/entry/React-%EB%91%90%EB%B2%88%EC%94%A9-%EB%A0%8C%EB%8D%94%EB%A7%81-%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95)
-- [kakao map API를 이용해 지도 출력](https://d0u0b.tistory.com/entry/React-kakao-map-API%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EC%A7%80%EB%8F%84-%EC%B6%9C%EB%A0%A5)
-
+- [Kakao Developers 애플리케이션 등록 및 설정](https://d0u0b.tistory.com/entry/React-Kakao-Developers-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%93%B1%EB%A1%9D-%EB%B0%8F-%EC%84%A4%EC%A0%95)
+- [Kakao API를 이용해 지도 출력](https://d0u0b.tistory.com/entry/React-Kakao-API%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EC%A7%80%EB%8F%84-%EC%B6%9C%EB%A0%A5)
   
+
 <br><br>
+
 # ThreeJS
 
 - [ThreeJS 시작하기(1)](https://d0u0b.tistory.com/entry/Threejs-Threejs-%EC%8B%9C%EC%9E%91)
@@ -37,19 +40,35 @@
 - [ThreeJS 시작하기(3) : StandardMeterial, 빛, OrbitControls 설정](https://d0u0b.tistory.com/entry/Threejs-Threejs-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B03-StandardMeterial-%EB%B9%9B-OrbitControls-%EC%84%A4%EC%A0%95)
 
 <br><br>
-# Tool
-- [Mac : Brew 이용하여 node 설치](https://d0u0b.tistory.com/entry/Brew-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-node-%EC%84%A4%EC%B9%98)
+
+# MacOS
+
+- [Brew 이용하여 node 설치](https://d0u0b.tistory.com/entry/Brew-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-node-%EC%84%A4%EC%B9%98)
+- [OpenSSL 설치 & 인증서 발](https://d0u0b.tistory.com/entry/MacOS-OpenSSL-%EC%84%A4%EC%B9%98-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89)
+
+<br><br>
+
+# Eclipse
 - [Eclipse : 이클립스 주석 설정(comments)](https://d0u0b.tistory.com/entry/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A3%BC%EC%84%9D-%EC%84%A4%EC%A0%95-comments)
 - [Eclipse : 이클립스 Build Path, Compiler 설정](https://d0u0b.tistory.com/entry/Eclipse-Build-Path-Compiler-%EC%84%A4%EC%A0%95)
 - [Eclipse : eclipse.ini 파일로 jdk 경로 설정](https://d0u0b.tistory.com/entry/Eclipse-eclipseini-%ED%8C%8C%EC%9D%BC%EB%A1%9C-jdk-%EA%B2%BD%EB%A1%9C-%EC%84%A4%EC%A0%95)
 - [Eclipse : IPv6에서 IPv4로 출력 설정](https://d0u0b.tistory.com/entry/Eclipse-%EC%95%84%EC%9D%B4%ED%94%BC-IPv6%EC%97%90%EC%84%9C-IPv4%EB%A1%9C-%EC%B6%9C%EC%84%A4%EC%A0%95)
-- [Mac : OpenSSL 설치 & 인증서 발급](https://d0u0b.tistory.com/entry/MacOS-OpenSSL-%EC%84%A4%EC%B9%98-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EB%B0%9C%EA%B8%89)
 
 <br><br>
+
+# IntelliJ
+
+- [인텔리제이 명령어 모음(Mac/Windows)](https://d0u0b.tistory.com/entry/IntelliJ-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%9C%EC%9D%B4-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D%8C-Mac-%EB%A7%A5-Windows-%EC%9C%88%EB%8F%84%EC%9A%B0)
+- [인텔리제이 프로젝트 폴더 안보임 #src](https://d0u0b.tistory.com/entry/IntelliJ-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%9C%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8F%B4%EB%8D%94-%EC%95%88%EB%B3%B4%EC%9E%84-src)
+
+
+<br><br>
+
 # Error
 - [Failed to scan 경고](https://d0u0b.tistory.com/entry/Error-Spring-Boot-App-Failed-to-scan-%EA%B2%BD%EA%B3%A0)
 
 <br><br>
+
 # Others
 - [Git : 터미널로 깃 관리](https://d0u0b.tistory.com/entry/Git-%ED%84%B0%EB%AF%B8%EB%84%90%EB%A1%9C-%EA%B9%83-%EA%B4%80%EB%A6%AC)
 - [Redis : Window에 Redis설치](https://d0u0b.tistory.com/entry/Redis-Window%EC%97%90-Redis-%EC%84%A4%EC%B9%98)
