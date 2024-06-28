@@ -1,18 +1,19 @@
-package _11xxx.B4_11720;
+package _02xxx.B5_2438;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         int N = Integer.parseInt(br.readLine());
-        String input = br.readLine();
-        int result = 0;
-        for(int i=0;i<N;i++){
-            result += Integer.parseInt(input.substring(i, i+1));
+
+        for (int i = 1; i <= N; i++) {
+            sb.append(String.join("", Collections.nCopies(i, "*")) + "\n");
         }
-        System.out.println(result);
+        System.out.println(sb);
         br.close();
     }
 }
