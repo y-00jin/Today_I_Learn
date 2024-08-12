@@ -15,7 +15,6 @@ public class MemoryMemberRepository implements MemberRepository{
         store.put(member.getId(), member);
         return member;
     }
-
     @Override
     public Optional<Member> findById(Long id) {
         return Optional.ofNullable(store.get(id));
@@ -33,8 +32,7 @@ public class MemoryMemberRepository implements MemberRepository{
         return new ArrayList<>(store.values());
     }
 
-
-    public void clearStore(){
+    public void clearStore() {
         store.clear();
     }
 }

@@ -6,36 +6,34 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
-    /**
-     * 하나의 테스트가 끝난 후 콜백
-     */
-//    @AfterEach
-//    public void afterEach(){
-//        repository.clearStore();
-//    }
 
-//    @Test
-//    public void save(){
-//        // 저장할 member 객체 생성
-//        Member member = new Member();
-//        member.setName("spring");
-//
-//        // 저장
-//        repository.save(member);
-//
-//        // 검증
-//        Member result = repository.findById(member.getId()).get();
-//        assertThat(member).isEqualTo(result);   // assertj.core.api
-//    }
+    // AfterEach : 하나의 테스트가 끝나면 호출됨
+    @AfterEach
+    public void afterEach() {
+        repository.clearStore();    // 테스트 결과가 다른 테스트에 영향을 주면 안됨
+    }
 
     @Test
-    public void findByName(){
+    public void save() {
+        //given
+        Member member = new Member();
+        member.setName("spring");
+        //when
+        repository.save(member);
+        //then
+        Member result = repository.findById(member.getId()).get();
+        assertThat(result).isEqualTo(member);
+    }
+
+    @Test
+    public void findByName() {
+        //given
         Member member1 = new Member();
         member1.setName("spring1");
         repository.save(member1);
@@ -44,21 +42,25 @@ class MemoryMemberRepositoryTest {
         member2.setName("spring2");
         repository.save(member2);
 
+        //when
         Member result = repository.findByName("spring1").get();
+
+        //then
         assertThat(result).isEqualTo(member1);
     }
 
     @Test
-    public void findAll(){
+    public void findAll() {
+        //given
         Member member1 = new Member();
         member1.setName("spring1");
         repository.save(member1);
-
         Member member2 = new Member();
         member2.setName("spring2");
         repository.save(member2);
-
+        //when
         List<Member> result = repository.findAll();
+        //then
         assertThat(result.size()).isEqualTo(2);
     }
 
