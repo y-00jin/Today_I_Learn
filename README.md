@@ -5,7 +5,7 @@
 
 <br>
 
-### <img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" width="20" height="20" style="vertical-align: middle;"/>  BAEKJOON
+### <img src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg" width="20" height="20" style="vertical-align: middle;"/>  BAEKJOON
 
 #### [백준 프로필](https://solved.ac/profile/cl0u0b)
 
