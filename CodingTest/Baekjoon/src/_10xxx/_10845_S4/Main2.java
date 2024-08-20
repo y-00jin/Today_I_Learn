@@ -1,0 +1,34 @@
+package _10xxx._10845_S4;
+import java.io.*;
+import java.util.*;
+import java.util.function.BiFunction;
+
+public class Main2 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        Stack<Integer> stack = new Stack<>();
+        Map<String, BiFunction<Stack<Integer>, Integer, Integer>> commands = new HashMap<>();
+
+        commands.put("push", (s, i) -> s.push(i));
+        commands.put("pop", (s, i) -> s.isEmpty() ? -1 : s.pop());
+        commands.put("size", (s, i) -> s.size());
+        commands.put("empty", (s, i) -> s.isEmpty() ? 1 : 0);
+        commands.put("top", (s, i) -> s.isEmpty() ? -1 : s.peek());
+
+        int N = Integer.parseInt(br.readLine());
+        for (int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            String func = st.nextToken();
+
+            if ("push".equals(func)) {
+                commands.get(func).apply(stack, Integer.parseInt(st.nextToken()));
+            } else {
+                bw.write(commands.get(func).apply(stack, null) + "\n");
+            }
+        }
+
+        bw.flush();
+        bw.close();
+    }
+}
