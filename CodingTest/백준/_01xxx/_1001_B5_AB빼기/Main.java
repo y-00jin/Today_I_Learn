@@ -1,4 +1,4 @@
-package _01xxx._1001_AB빼기_B5;
+package _01xxx._1001_B5_AB빼기;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
