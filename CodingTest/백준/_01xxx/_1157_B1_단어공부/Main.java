@@ -1,4 +1,4 @@
-package _01xxx._1157_단어공부_B1;
+package _01xxx._1157_B1_단어공부;
 
 import java.io.*;
 
