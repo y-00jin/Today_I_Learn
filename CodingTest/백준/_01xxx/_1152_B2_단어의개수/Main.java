@@ -1,4 +1,4 @@
-package _01xxx._1152_단어의개수_B2;
+package _01xxx._1152_B2_단어의개수;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
