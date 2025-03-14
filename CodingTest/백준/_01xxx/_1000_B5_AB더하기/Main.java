@@ -1,4 +1,4 @@
-package _01xxx._1000_AB더하기_B5;
+package _01xxx._1000_B5_AB더하기;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
