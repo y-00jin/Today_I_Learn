@@ -27,7 +27,7 @@ public class Main {
         for (int i = 0; i < N; i++) {
             String line = br.readLine();
             for (int j = 0; j < M; j++) {
-                arr[i][j] = Integer.parseInt(line.charAt(i) + "");
+                arr[i][j] = Integer.parseInt(line.charAt(j) + "");
             }
         }
 
