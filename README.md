@@ -5,11 +5,11 @@
 
 <br>
 
-### <img src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg" width="20" height="20" style="vertical-align: middle;"/>  BAEKJOON
+### <img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" width="20" height="20" style="vertical-align: middle;"/>  BAEKJOON
 
 #### [백준 프로필](https://solved.ac/profile/cl0u0b)
 
-#### [백준 문제 풀이 (CODE)](https://github.com/y-00jin/Today_I_Learn/tree/main/CodingTest/Baekjoon/src) 
+#### [백준 문제 풀이 (CODE)](https://github.com/y-00jin/Today_I_Learn/tree/main/CodingTest/백준) 
 
 #### [백준 문제 풀이 및 정리(Tistory)](https://d0u0b.tistory.com/category/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EB%B0%B1%EC%A4%80)
 
