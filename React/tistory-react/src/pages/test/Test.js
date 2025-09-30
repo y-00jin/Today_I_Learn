@@ -7,9 +7,9 @@ export default function Test() {
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_API_URL}/api/tests`)
             .then(res => {
-                setTests(res.data);
-            })
-    }, [])
+                setTests(res.data)
+            });
+    }, []);
 
     return (
         <>
