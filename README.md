@@ -21,7 +21,7 @@
 
 #### [🔗 알고리즘](https://github.com/y-00jin/Today_I_Learn/tree/main/_Knowledge/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
-#### [🔗 Spring](https://github.com/y-00jin/Today_I_Learn/tree/main/_Knowledge/Spring) 
+#### [🔗 Spring](https://github.com/y-00jin/Today_I_Learn/tree/main/_Knowledge/SpringBoot) 
 
 <br>
 
